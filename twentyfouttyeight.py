@@ -221,3 +221,12 @@ for i in range(2):
     box_divider.left(90)
 
 # creating the squre     
+setters()
+apperance_updater()
+turtle.listen()
+turtle.onkey(merge_right, "Up")
+turtle.onkey(merge_left, "Down")
+turtle.onkey(merge_up, "Left")
+turtle.onkey(merge_down, "Right")
+
+turtle.mainloop()
