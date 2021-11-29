@@ -15,6 +15,7 @@ writer_2.penup()
 writer_2.setpos(-100,-90)
 writer_2.pendown()
 
+
 def setters():
     pos1_row= randint(0, 3)
     pos1_column = randint(0, 3)
@@ -182,3 +183,41 @@ def apperance_updater():
         xpos += 120
 
 #to update what is diplayed on the gui evry time a specified key is pressed
+box= turtle.Turtle()
+box.pensize(6)
+box.color('#000000')
+screen = turtle.Screen()
+screen.bgcolor('#adadad')
+screen.title('2048 BY BEIMNET BEKELE')
+box.ht()
+pos_change = 80
+box.penup()
+box.backward(240)
+box.pendown()
+turtle.tracer(3, 0)
+for i in range(4):
+    for j in range(2):
+        box.forward(480)
+        box.left(90)
+        box.forward(80)
+        box.left(90)
+    box.setpos(-240, pos_change)
+    pos_change += 80
+box_divider = turtle.Turtle()
+box_divider.pensize(6)
+box_divider.color('#000000')
+box_divider.ht()
+box_divider.penup()
+box_divider.backward(240)
+box_divider.pendown()
+for i in range(2):
+    box_divider.forward(120)
+    box_divider.left(90)
+    box_divider.forward(320)
+    box_divider.right(90)
+    box_divider.forward(120)
+    box_divider.right(90)
+    box_divider.forward(320)
+    box_divider.left(90)
+
+# creating the squre     
